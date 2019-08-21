@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+#state-list {
+    border: 1px solid black;
+    
+}
+
+.results-amount {
+    border: 1px solid black;
+}
+
+.submit {
+    border: 1px solid black;
+}
+
+
