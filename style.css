@@ -37,7 +37,7 @@
     padding: 30px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     border-radius: 8px;
 }
 
@@ -84,6 +84,28 @@ p {
 
 
 /*Results Styling*/
+
+.results-display-container {
+    margin: auto;
+}
+.single-result {
+    border: 1px solid rgb(177, 175, 175);
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: -1px 2px rgb(209, 209, 209);
+    padding: 15px;
+    width: 1000px;
+    margin-bottom: 15px;
+}
+
+#description {
+    color: #222;
+}
+
+#address {
+    font-style: italic;
+    color: #222;
+}
 
 
 
