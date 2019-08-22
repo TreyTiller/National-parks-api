@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+
+/*Main-Form Styling*/
+
+
 #state-list {
     border: 1px solid black;
     
@@ -18,5 +22,74 @@
 .hidden{
     display: none;
 }
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.user-request-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border: 1px solid black;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 18px;
+}
+
+p {
+    margin: 10px;
+}
+
+.results-amount {
+    margin: auto;
+    width: 50px;
+    height: 25px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.submit {
+    background-color: transparent;
+    width: 80px;
+    height: 18px;
+    margin: auto;
+    border-radius: 6px;
+    padding: 1px;
+    font-size: 12px;
+}
+
+#state-list:hover {
+    cursor: pointer;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.results-amount:hover {
+    cursor: text;
+}
+
+
+/*Results Styling*/
+
+
+
+
+
+
+
 
 
