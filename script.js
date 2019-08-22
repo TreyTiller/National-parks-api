@@ -39,8 +39,30 @@ function getParks(query, limit = 10) {
 
     fetch(url)
     .then(response => response.json())
-    .then(responseJson => console.log(responseJson))
-    .catch(error => alert('I smell something fishy'));
+    .then(responseJson => displayResults(responseJson))
+}
+
+function displayResults(responseJson) {
+    $('.results-display-container').empty();
+    for (let i = 0; i < responseJson.data.length; i++) {
+        $('.results-display-container').append(`
+            <div class="name-container">
+                <h2 id="name">${responseJson.data[i].fullName}</h2>
+            </div>
+
+            <div class="description-container">
+                <h3 id="description">${responseJson.data[i].description}</h3>
+            </div>
+
+            <div class="website-container">
+                <a id="website" href="${responseJson.data[i].url}" target="_blank">Visit the Park Site</a>
+            </div>
+
+            <div class="address-container">
+                <h4 id="address">${responseJson.data[i].directionsInfo}</h4>
+            </div>
+        `)};
+    $('.results-display-container').removeClass('hidden');
 }
 
 $(watchForm)
