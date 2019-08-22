@@ -45,6 +45,10 @@
     border-radius: 8px;
 }
 
+legend {
+    text-align: center;
+}
+
 p {
     margin: 10px;
     display: flex;
